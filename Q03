@@ -1,0 +1,91 @@
+package com.mycompany.testclass;
+
+public class Person
+{
+    private String name;
+    private int id;
+    
+    public void setName(String name)
+    {
+        this.name=name;
+    }
+    public void setID(int id)
+    {
+        this.id=id;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public int getID()
+    {
+        return id;
+    }
+}
+
+
+package com.mycompany.testclass;
+
+public class Student extends Person
+{
+    private String course;
+    
+    public void setCourse(String course)
+    {
+        this.course=course;
+    }
+    public String getCourse()
+    {
+        return course;
+    }
+}
+
+
+package com.mycompany.testclass;
+
+public class Lecturer extends Person
+{
+    private String programme;
+    
+    public void setProg(String programme)
+    {
+        this.programme=programme;
+    }
+    public String getProg()
+    {
+        return programme;
+    }
+}
+
+
+package com.mycompany.testclass;
+
+public class TestClass 
+{
+
+    public static void main(String[] args)
+    {
+        Student s1=new Student();
+        s1.setName("Thilina");
+        s1.setID(111);
+        s1.setCourse("SE");
+        
+        System.out.println(">>>>Student<<<<<");
+        System.out.println("Student name:"+s1.getName());
+        System.out.println("Srudent id:"+s1.getID());
+        System.out.println("Course:"+s1.getCourse());
+        
+        System.out.println("");
+        
+        Lecturer l1=new Lecturer();
+        l1.setName("Sunil");
+        l1.setID(999);
+        l1.setProg("Language C");
+        
+        System.out.println(">>>>Lectuer<<<<<");
+        System.out.println("Lectuer name:"+l1.getName());
+        System.out.println("Lectuer id:"+l1.getID());
+        System.out.println("Prograemme:"+l1.getProg());
+        
+    }
+}

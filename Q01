@@ -1,0 +1,65 @@
+package com.mycompany.testclass;
+
+public class Employee 
+{
+    private int empID;
+    private String empName,empDesignation;
+    
+    public void setId(int eID)
+    {
+        empID=eID;
+    }
+    public void setName(String en)
+    {
+        empName=en;
+    }
+    public void setDes(String edes)
+    {
+        empDesignation=edes;
+    }
+    public int getId()
+    {
+        return empID;
+    }
+    public String getName()
+    {
+        return empName;
+    }
+    public String getDes()
+    {
+        return empDesignation;
+    }
+}
+
+
+package com.mycompany.testclass;
+
+public class Testclass 
+{
+    public static void main(String[] args) 
+    {
+        Employee e1= new Employee();
+        
+        e1.setId(1111);
+        e1.setName("Mr.Bogdan");
+        e1.setDes("VC");
+        
+        Employee e2=new Employee();
+        e2.setId(1112);
+        e2.setName("Mrs.Bird");
+        e2.setDes("DVC");
+        
+        System.out.println("**********Employee 01**********");
+        System.out.println("Employee ID:"+e1.getId());
+        System.out.println("Employee Name :"+e1.getName());
+        System.out.println("Employee Designation:"+e1.getDes());
+        System.out.println("");
+        
+        System.out.println("**********Employee 02**********");
+        System.out.println("Employee ID:"+e2.getId());
+        System.out.println("Employee Name :"+e2.getName());
+        System.out.println("Employee Designation:"+e2.getDes());
+        
+        
+    }
+}

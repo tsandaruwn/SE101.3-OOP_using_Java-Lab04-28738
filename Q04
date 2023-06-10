@@ -1,0 +1,50 @@
+package com.mycompany.animalobj;
+
+public class AnimalObj
+    {
+    
+
+    public static void main(String[] args)
+    {
+      Animal a = new Animal();
+      Mammal m = new Mammal();
+      Dog d = new Dog();
+      System.out.println(m instanceof Animal);
+      System.out.println(d instanceof Mammal);
+      System.out.println(d instanceof Animal);
+
+    }
+}
+
+package com.mycompany.animalobj;
+
+public class Animal 
+{
+    
+}
+
+package com.mycompany.animalobj;
+
+public class Mammal extends Animal
+{
+    
+}
+
+package com.mycompany.animalobj;
+
+public class Reptile extends Animal
+{
+    
+}
+
+package com.mycompany.animalobj;
+
+public class Dog extends Mammal
+{
+    
+}
+
+Answer:
+true
+true
+true
